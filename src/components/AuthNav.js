@@ -6,9 +6,8 @@ const Link = styled(NavLink)`
   color: #616161;
   &.active {
     color: #e0e0e0;
-  }`
-;
-
+  }
+`;
 export const AuthNav = () => {
   return (
     <Flex align="center" gap="15px">

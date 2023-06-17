@@ -9,7 +9,6 @@ export const PrivateRoute = ({ component: Component, redirectTo = '/' }) => {
   return shouldRedirect ? <Navigate to={redirectTo} /> : Component;
 };
 
-
 PrivateRoute.propTypes = {
   component: PropTypes.node.isRequired,
   redirectTo: PropTypes.string.isRequired,

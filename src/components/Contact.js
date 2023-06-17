@@ -5,7 +5,7 @@ import { DeleteIcon } from '@chakra-ui/icons';
 import { Button } from '@chakra-ui/react';
 import { Flex, Box, useToast } from '@chakra-ui/react';
 import PropTypes from 'prop-types';
-export const Contact = ({id, name, number}) => {
+export const Contact = ({ id, name, number }) => {
   const { isLoading } = useAuth();
   const dispatch = useDispatch();
   const toast = useToast();

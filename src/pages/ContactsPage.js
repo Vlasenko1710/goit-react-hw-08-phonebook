@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { fetchContacts } from "redux/contacts/operations";
-import { ContactForm } from "components/ContactForm";
-import { ContactList } from "components/ContactList";
-import { Filter } from "components/Filter";
-import { Flex, Box, Text } from "@chakra-ui/react";
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchContacts } from 'redux/contacts/operations';
+import { ContactForm } from 'components/ContactForm';
+import { ContactList } from 'components/ContactList';
+import { Filter } from 'components/Filter';
+import { Flex, Box, Text } from '@chakra-ui/react';
 
 export default function ContactsPage() {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(fetchContacts());
-    }, [dispatch]);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   return (
     <Flex align="center" justify="center" direction="column">
@@ -26,6 +26,5 @@ export default function ContactsPage() {
         <ContactList />
       </Box>
     </Flex>
-  ); 
-    
+  );
 }

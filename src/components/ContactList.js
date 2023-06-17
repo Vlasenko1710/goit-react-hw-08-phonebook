@@ -21,9 +21,7 @@ export const ContactList = () => {
               item.name.toLowerCase().includes(filter.toLowerCase())
             )
             .map(({ id, name, number }) => {
-              return (
-      <Contact key={id} id={id} name={name} number={number}/>
-     );
+              return <Contact key={id} id={id} name={name} number={number} />;
             })}
         </ul>
       </Box>

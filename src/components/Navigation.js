@@ -3,7 +3,7 @@ import { useAuth } from 'hooks/useAuth';
 import { Flex } from '@chakra-ui/react';
 import styled from 'styled-components';
 const Link = styled(NavLink)`
- color: #616161;
+  color: #616161;
   &.active {
     color: #e0e0e0;
   }
@@ -20,4 +20,3 @@ export const Navigation = () => {
     </nav>
   );
 };
-
