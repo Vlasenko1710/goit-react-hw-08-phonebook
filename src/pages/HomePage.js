@@ -1,5 +1,5 @@
 import { Box, Text } from '@chakra-ui/react';
-import { useAuth } from 'hooks/useAuth';
+// import { useAuth } from 'hooks/useAuth';
 
 export default function HomePage() {
   return (
